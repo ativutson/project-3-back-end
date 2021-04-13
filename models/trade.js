@@ -2,17 +2,20 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const tradeSchema = new Schema({
+    no: Number,
     symbol: String,
     tradeDate: Date,
     sellingDate: Date,
+    days: Number,
+    lOrS: String,
     quantity: Number,
     totalCost: Number,
-    realized: Number,
+    totalRevenue: Number,
     dividend: Number,
     avgPrice: Number,
     sellingPrice: Number,
     pAndL: Number,
-    return: Number,
+    returns: Number,
 }, { timestamps: true });
 
 
