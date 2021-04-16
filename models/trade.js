@@ -11,11 +11,11 @@ const tradeSchema = new Schema({
     quantity: Number,
     totalCost: Number,
     totalRevenue: Number,
-    dividend: Number,
+    dividend: String,
     avgPrice: Number,
     sellingPrice: Number,
     pAndL: Number,
-    returns: Number,
+    returns: String,
 }, { timestamps: true });
 
 
