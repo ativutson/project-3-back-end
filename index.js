@@ -2,6 +2,8 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
+const corsOptions = require('./configs/cors.js');
+NODE_ENV === "production" ? app.use(cors(corsOptions)) : app.use(cors());
 
 // initialize the express app
 const app = express();
